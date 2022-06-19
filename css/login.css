@@ -1,0 +1,133 @@
+#top_bg{
+    width: 100%; height: 350px;
+    background-size: cover;
+    background-position: 50% 25%;
+    background-image: url(../img/header-bg.jpg);
+    font-weight: lighter;
+}
+
+#top_bg .cloud{
+    width: 100%; height: 100%;
+    background-position: 0% 50%;
+    background-image: url(../img/cloud.png);
+    background-repeat: no-repeat;
+    animation: 150s moveCloud infinite linear;
+}
+@keyframes moveCloud{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+#top_bg .cloud .wrap{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#top_bg .cloud .wrap .title{
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#top_bg .cloud .wrap h2{
+    font-size: 24px;
+    color: #5c5c5c;
+}
+#top_bg .cloud .wrap span{
+    font-weight: lighter;
+    font-size: 24px;
+    color: #9c9c9c;
+}
+
+#login_sec{}
+#login_sec .wrap{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login_sec .wrap #singin_form{
+    width: 480px;
+    border: 1px solid #d2d2d7;
+    border-radius: 5px;
+    padding: 30px;
+    outline: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+#login_sec .wrap #singin_form .txt_box{}
+#login_sec .wrap #singin_form .txt_box input{
+    width: 400px;
+    height: 56px;
+    padding: 18px 16px;
+    font-size: 17px;
+    color: #1d1d1f;
+    border: 1px solid #d2d2d7;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    outline-color: #5e889e;
+}
+
+#login_sec .wrap #singin_form .find_id{
+    text-align: right;
+    margin-bottom: 30px;
+}
+#login_sec .wrap #singin_form .find_id a{
+    font-size: 14px;
+    color: #1794d8;
+}
+#login_sec .wrap #singin_form .submit{
+    margin-bottom: 25px;
+    border: none;
+    cursor: pointer;
+}
+#login_sec .wrap #singin_form .submit:hover{
+    background-color: #c5a5b2;
+    color: #755562;
+    transition: color 0.5s, background-color 0.5s;
+}
+#login_sec .wrap #singin_form .submit, #login_sec .wrap #singin_form .create_account a{
+    width: 400px;
+    padding: 18px 16px;
+    font-size: 17px;
+    background-color: #5e889e;
+    color: #fff;
+    border-radius: 10px;
+}
+#login_sec .wrap #singin_form .create_account{}
+#login_sec .wrap #singin_form .create_account a{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+#login_sec .wrap #singin_form .create_account a:hover{
+    background-color: #c5a5b2;
+    color: #755562;
+    transition: color 0.5s, background-color 0.5s;
+}
+#login_sec .wrap #singin_form .create_account p{
+    text-align: center;
+    position: relative;
+    line-height: 1;
+    margin-bottom: 25px;
+    color: #5c5c5c;
+}
+#login_sec .wrap #singin_form .create_account p::after, #login_sec .wrap #singin_form .create_account p::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25%;
+    height: 0.5px;
+    background-color: #999;
+}
+#login_sec .wrap #singin_form .create_account p::after{right: 10px;}
+#login_sec .wrap #singin_form .create_account p::before{left: 10px;}

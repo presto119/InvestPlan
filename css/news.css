@@ -1,0 +1,111 @@
+#top_bg{
+    width: 100%; height: 350px;
+    background-size: cover;
+    background-position: 50% 25%;
+    background-image: url(../img/header-bg.jpg);
+    font-weight: lighter;
+}
+
+#top_bg .cloud{
+    width: 100%; height: 100%;
+    background-position: 0% 50%;
+    background-image: url(../img/cloud.png);
+    background-repeat: no-repeat;
+    animation: 150s moveCloud infinite linear;
+}
+@keyframes moveCloud{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+#top_bg .cloud .wrap{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#top_bg .cloud .wrap .title{
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#top_bg .cloud .wrap h2{
+    font-size: 24px;
+    color: #5c5c5c;
+}
+#top_bg .cloud .wrap span{
+    font-weight: lighter;
+    font-size: 24px;
+    color: #9c9c9c;
+}
+
+section{}
+section .wrap{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+section .wrap .cont{
+    width: calc(100% / 6 * 5 - 20px);
+    padding-bottom: 60px;
+}
+section .wrap .cont .box{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    border-top: 1px solid #5e889e;
+    position: relative;
+}
+section .wrap .cont .box:last-child{
+    border-bottom: 1px solid #5e889e;
+}
+section .wrap .cont .box .img_part{
+    width: calc(100% / 10 * 3 - 20px);
+    height: 125px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: #5e889e;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+section .wrap .cont .box .txt_part{
+    width: calc(100% / 10 * 7 - 20px);
+    height: 125px;
+    margin-left: 10px;
+}
+section .wrap .cont .box .txt_part h3{
+    font-size: 18px;
+    color: #5e889e;
+    padding-bottom: 20px;
+    line-height: 1;
+}
+section .wrap .cont .box .txt_part p{
+    font-size: 14px;
+    color: #5c5c5c;
+    line-height: 1.3;
+}
+section .wrap .cont .box .txt_part span{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    line-height: 1;
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    color: #5c5c5c;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
